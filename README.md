@@ -1,5 +1,7 @@
 # agent-runtime-memory-cache
 
+[![npm downloads](https://img.shields.io/npm/dm/agent-runtime-memory-cache.svg)](https://www.npmjs.com/package/agent-runtime-memory-cache)
+
 A highly semantic, agent-centric memory wrapper built on top of the high-performance `runtime-memory-cache`. This package provides a robust memory architecture designed specifically for LLM-based multi-agent systems.
 
 It allows multiple agents to have isolated, high-performance in-memory caches, track chronological thought streams, and broadcast shared memories across all agents simultaneously.
@@ -271,18 +273,6 @@ eventAgent.remember('myKey', 'myValue'); // Triggers the callback!
 - `memorySize(): number`
 - `getStats(): AgentMemoryStats`
 - `getUnderlyingCache(): RuntimeMemoryCache`
-
-## Publishing
-
-To publish this package to NPM, we have provided an automated hook that prevents accidental publishing of unchanged versions and automatically triggers a build:
-
-```bash
-# 1. Increment the version (patch, minor, major)
-npm version patch
-
-# 2. Publish (prepublishOnly hook will automatically build the package)
-npm publish
-```
 
 ## License
 
