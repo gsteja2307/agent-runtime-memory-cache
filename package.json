@@ -1,6 +1,6 @@
 {
   "name": "agent-runtime-memory-cache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Agent Memory Cache wrapper over runtime-memory-cache",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
