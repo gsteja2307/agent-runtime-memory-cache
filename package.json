@@ -1,6 +1,6 @@
 {
   "name": "agent-runtime-memory-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Agent Memory Cache wrapper over runtime-memory-cache",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -28,7 +28,18 @@
     "llm",
     "multi-agent"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsteja2307/agent-runtime-memory-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gsteja2307/agent-runtime-memory-cache/issues"
+  },
+  "homepage": "https://github.com/gsteja2307/agent-runtime-memory-cache#readme",
+  "author": {
+    "name": "gsteja2307",
+    "url": "https://github.com/gsteja2307"
+  },
   "license": "MIT",
   "dependencies": {
     "runtime-memory-cache": "^0.4.0"
