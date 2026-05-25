@@ -1,0 +1,41 @@
+{
+  "name": "agent-runtime-memory-cache",
+  "version": "1.0.0",
+  "description": "Agent Memory Cache wrapper over runtime-memory-cache",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "node test.js",
+    "prepublishOnly": "node scripts/check-version.js && npm run build"
+  },
+  "keywords": [
+    "agent",
+    "cache",
+    "memory",
+    "llm",
+    "multi-agent"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "runtime-memory-cache": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}
