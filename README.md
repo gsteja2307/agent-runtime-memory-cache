@@ -286,4 +286,4 @@ npm publish
 
 ## License
 
-ISC
+MIT
